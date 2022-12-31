@@ -6,8 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;  overflow-x: hidden;
   /* background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),  url("./assets/images/fold.jpg");  blur img*/ 
-  background-image: url("./assets/images/hero.png");
-  background-size: cover;
+  /* background-image: url("./assets/images/hero.png");
+  background-size: cover; */
+  background-color: #2b303a;
 }
 
 
@@ -17,13 +18,15 @@ code {
 }
 
 .homeHeader {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 20%;
   color: #fff;
+  text-align: center;
+  align-items: center;
+  margin: 50px;
 }
 
 
-ul {
+
+.navBar ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -31,7 +34,11 @@ ul {
   color: #fff;
 }
 
-li {
+.navBar li {
   list-style: none;
   
+}
+
+.ladderTable {
+  color: #fff;
 }

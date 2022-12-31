@@ -4,7 +4,8 @@ import React from "react";
 
 function Nav() {
     return (
-        <div>
+        <div className="navBar">
+            <nav>
             <ul>
              
                 <h1>Ditto</h1>
@@ -13,12 +14,16 @@ function Nav() {
                     Home
                 </li>
                 <li>
-                    Leaderboard
+                    Ladder
                 </li>
                 <li>
-                    Title
+                    Live Tracker
+                </li>
+                <li>
+                    Charts
                 </li>
             </ul>
+            </nav>
         </div>
     )
 }
