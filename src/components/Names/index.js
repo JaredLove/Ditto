@@ -8,13 +8,14 @@ const Names = ({ ladders, loading}) => {
     }
 
     return (
+        <div className="div">
     <table className="ladderTable">
     
          
             <thead>
               <tr>
               <th>Rank</th>
-              <th> Class </th>
+              <th>Class</th>
               <th>Faction</th>
               <th>Name</th>
               <th>Guild</th>
@@ -41,6 +42,7 @@ const Names = ({ ladders, loading}) => {
             
 
         </table>
+        </div>
         )
     
 }

@@ -1,26 +1,41 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import {
+    Navbar,
+    Nav,
+ 
+  } from "react-bootstrap";
 
 
-
-function Nav() {
+function nav() {
     return (
         <div className="navBar">
             <nav>
             <ul>
              
-                <h1>Ditto</h1>
+            <Navbar.Brand as={Link} to="/" className="navhover">
+                  Ditto
+                </Navbar.Brand>
                 
                 <li>
-                    Home
+                <Nav.Link as={Link} to="/" className="navhover">
+                  Home
+                </Nav.Link>
                 </li>
                 <li>
-                    Ladder
+                <Nav.Link as={Link} to="/ladder" className="navhover">
+                  Ladder
+                </Nav.Link>
                 </li>
                 <li>
-                    Live Tracker
+                <Nav.Link as={Link} to="/" className="navhover">
+                  Live Tracker
+                </Nav.Link>
                 </li>
                 <li>
-                    Charts
+                <Nav.Link as={Link} to="/" className="navhover">
+                  Charts
+                </Nav.Link>
                 </li>
             </ul>
             </nav>
@@ -28,4 +43,4 @@ function Nav() {
     )
 }
 
-export default Nav
+export default nav
