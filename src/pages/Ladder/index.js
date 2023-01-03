@@ -5,13 +5,13 @@ import Pagination from '../../components/Pagination';
 
 
 
-const API_URL="https://us.api.blizzard.com/data/wow/pvp-season/34/pvp-leaderboard/3v3?namespace=dynamic-us&locale=en_US&access_token=USnsjwP4sAJr3LfN0x2LPIA66BAh4JwhAG";
+const API_URL="https://us.api.blizzard.com/data/wow/pvp-season/34/pvp-leaderboard/3v3?namespace=dynamic-us&locale=en_US&access_token=US4Rliag97dya43Xlauf95XhGMg4cl2YG5";
 // const API_SEARCH="https://api.themoviedb.org/3/search/movie?api_key=e62a8500b88c9a431caf5c5d9c7a7674&query";
 const Ladder = () => {
   const [ladders, setLadder] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, SetCurrentPage] = useState(1);
-  const [namesPerPage] = useState(100);
+  const [namesPerPage] = useState(50);
     useEffect(() => {
     const fetchLadder = async () => {
       setLoading(true);

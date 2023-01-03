@@ -13,7 +13,7 @@ function nav() {
             <nav>
             <ul>
              
-            <Navbar.Brand as={Link} to="/" className="navhover">
+            <Navbar.Brand as={Link} to="/" className="navBrand">
                   Ditto
                 </Navbar.Brand>
                 

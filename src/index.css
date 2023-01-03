@@ -6,9 +6,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;  overflow-x: hidden;
   /* background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),  url("./assets/images/fold.jpg");  blur img*/ 
-  /* background-image: url("./assets/images/hero.png");
-  background-size: cover; */
+  background-image: url("./assets/images/hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #2b303a;
+
+
+  
 }
 
 
@@ -24,26 +28,41 @@ code {
   margin: 50px;
 }
 
-
+.navbar nav {
+  width: 100px;
+}
 
 .navBar ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.5);
+  height: 50px;
   color: #fff;
 }
 
 .navBar li {
   list-style: none;
-  
+  padding: 10px;
+}
+
+.navBrand {
+
+  font-size: 30px;
 }
 
 .ladderTable {
-  color: #fff;
+    border-collapse: separate;
+  border-spacing: 150px 10px;
+ color: #fff;
 
 
 
+}
+
+.tHeader {
+    border: solid;
+    border-color: #fff;
 }
 
 .ladderTable tbody {
@@ -54,5 +73,13 @@ text-align: center;
 
 .div {
   background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+
+  border: solid;
+}
+
+.pagiNav button{
+ background-color: rgba(0, 0, 0, 0.5);
+ border: none;
 
 }
