@@ -8,11 +8,13 @@ import './App.css';
 function App() {
   return (
   <BrowserRouter>
+  <body className='hero'>
   <Nav></Nav>
   <Routes>
     <Route path='/' element={<Home/>} />
     <Route path='/ladder' element={<Ladder/>} />
   </Routes>
+  </body>
   </BrowserRouter>
   )
 }
